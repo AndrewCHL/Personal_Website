@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript">
+      function showProfile(){
+        document.getElementById('profile').style.display = "block";
+        document.getElementById('product').style.display = "none";        
+      }
+      function backHome(){
+        document.getElementById('profile').style.display = "none";
+        document.getElementById('product').style.display = "none";            
+      }
+      function showProduct(){
+        document.getElementById('product').style.display = "block";
+        document.getElementById('profile').style.display = "none";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-middle">
+          <li><a href="#" onclick="backHome()">Home</a></li>
+          <li><a href="#" onclick="showProfile()">Profile</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="jumbotron" id="title">
+      <div class="container">
+        <h1>Chen Hsun Lee's Website</h1>
+      </div>
+    </div> 
+    <div class="profile" id="profile">
+        <div class="neighborhood-guides">
+         <div class="container">
+          <h2>Chen Hsun Lee</h2>
+          </div>
+        </div>
+        <div class="learn-more">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Objective</h3>
+                <p>To find a job or internship as an Java engineer.</p>
+                <h3>Education</h3>
+                <p>UC San Diego (UCSD); La Jolla, CA, Fall 2015-Present</p>
+                <li> M.S., Materials Science and Engineering, GPA 3.77 / 4.0, expected: June 2017</li>
+                <p></p>
+                <p>National Taiwan University (NTU); Taipei, TAIWAN, 2008-2012</p>
+                <li> B.S., Materials Science and Engineering, focus on optoelectronic materials, GPA 3.75 / 4.0</li>
+                <h3>Skills/Others</h3>
+                <li> Programming: Java, Python, C/C++, JavaScript</li>
+                <li> Webpage Design: HTML, CSS</li>
+                <li> OS Excperience: Macintosh OS X, Windows</li>
+                <li> Language: Chinese(native),English(fluent),Japanese(basic)</li>
+            </div>
+            <div class="col-md-6">
+                <h3>Contact Info</h3>
+                <p>Email: chl594@ucsd.edu</p>
+                <h3>Relative Courses</h3>
+                <li>Computer Science and Object-Oriented Programming: Java</li>
+                <li>Basic Data Struct & OO Design</li>
+                <li>Software Tools&Techniques Lab</li>
+                <h3>Course Project</h3>
+                <p>JavaFx and Simple Game Programming</p>
+                <li> 2048</li>
+                <li> POKEMON Animation Game</li>
+                <li> Zombie Shooting Game</li>
+                <p></p>
+                <p>Data Structures and Algorithm</p>
+                <li> Implementations of Data Structures by Java</li>
+            </div>
+           </div>
+          </div>
+        </div>
+    </div>
+   
+  </body>
+</html>
